@@ -1,19 +1,13 @@
 # Emulate Dualsense as a 360 controller on Linux
 
-THIS FORK IS FOR RUNNING THIS REPO UNDER ROOT IF PERMISSION ISSUES ARISE USING ORIGINAL REPO ON USER ACCOUNTS.
-
-Initially wanted to implement Sony's PlayStation 5 controller support to `sc-controller` for broader config options but couldn't be bothered with all the python debugging right now.
-
-Useful for games not recognizing the Dualsense for some reason, like RDR 2 or Dragon Quest XI or other non-steam games in my testing, emulating the controller as a 360 fixes the compatibility gap entirely so a Dualsense can be used as the ultimate controller.
-
-The program is mainly based on xboxdrv's excellent ability to emulate a 360 controller.
+The purpose of this fork is to allow this repo to run under root in order to bypass permission issues accessing /dev/uinput.
 
 ## Pre-requirements
-
 
 - Have a recent kernel (5.12+) that includes the latest official drivers (hid-playstation)
 - Install xboxdrv (https://xboxdrv.gitlab.io)
 - Basic dev tools like `g++` or `make`
+- Make sure you are using this repo under ROOT. If you are using this as a user, please use the original repo. 
 
 ## How to compile
 ```
