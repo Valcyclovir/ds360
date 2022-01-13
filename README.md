@@ -1,5 +1,7 @@
 # Emulate Dualsense as a 360 controller on Linux
 
+THIS FORK IS FOR RUNNING THIS REPO UNDER ROOT IF PERMISSION ISSUES ARISE USING ORIGINAL REPO ON USER ACCOUNTS.
+
 Initially wanted to implement Sony's PlayStation 5 controller support to `sc-controller` for broader config options but couldn't be bothered with all the python debugging right now.
 
 Useful for games not recognizing the Dualsense for some reason, like RDR 2 or Dragon Quest XI or other non-steam games in my testing, emulating the controller as a 360 fixes the compatibility gap entirely so a Dualsense can be used as the ultimate controller.
@@ -15,7 +17,7 @@ The program is mainly based on xboxdrv's excellent ability to emulate a 360 cont
 
 ## How to compile
 ```
-git clone https://github.com/yoyossef/ds360.git
+git clone https://github.com/Valcyclovir/ds360
 cd ds360
 make
 ```
@@ -26,7 +28,7 @@ make
 ```
 #### Starting ds360.service manually, controller must be connected
 ```
-systemctl start --user ds360.service
+systemctl start ds360.service
 ```
 #### Automatically start ds360.service via udev rule when controller connects
 ```
@@ -34,7 +36,7 @@ systemctl start --user ds360.service
 ```
 ## How to install
 ```
-git clone https://github.com/yoyossef/ds360.git
+git clone https://github.com/Valcyclovir/ds360
 cd ds360
 make install
 ```
